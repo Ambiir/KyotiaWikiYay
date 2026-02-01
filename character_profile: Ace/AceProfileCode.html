@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Character Profile: Ace Kiani</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#9B59B6","background-light": "#f6f6f8",
+                        "background-dark": "#101622",
+                        "card-dark": "#161e2d",
+                        "border-dark": "#232f48",
+                        "text-secondary": "#92a4c9",
+                    },
+                    fontFamily: {
+                        "display": ["Work Sans", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #101622; 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #232f48; 
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #324467; 
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white font-display overflow-x-hidden min-h-screen flex flex-col selection:bg-primary selection:text-black">
+<header class="sticky top-0 z-50 flex items-center justify-between whitespace-nowrap border-b border-solid border-b-border-dark bg-[#111722]/90 backdrop-blur-md px-4 sm:px-10 py-3">
+<div class="flex items-center gap-4 sm:gap-8">
+<div class="flex items-center gap-4 text-white">
+<div class="size-6 text-primary">
+<span class="material-symbols-outlined !text-[24px]">auto_awesome</span>
+</div>
+<h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">Kyotia Wiki</h2>
+</div>
+<div class="hidden md:flex items-center gap-6">
+<a class="text-white text-sm font-medium leading-normal hover:text-primary transition-colors" href="../kyotia_wiki_dashboard/DashboardCode.html">Home</a>
+<a class="text-primary text-sm font-medium leading-normal" href="#">Characters</a>
+<a class="text-white text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Locations</a>
+<a class="text-white text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Artifacts</a>
+<a class="text-white text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Lore</a>
+</div>
+</div>
+<div class="flex flex-1 justify-end gap-4 sm:gap-8">
+<label class="hidden sm:flex flex-col min-w-40 !h-10 max-w-64">
+<div class="flex w-full flex-1 items-stretch rounded-lg h-full">
+<div class="text-text-secondary flex border-none bg-border-dark items-center justify-center pl-4 rounded-l-lg border-r-0">
+<span class="material-symbols-outlined text-[20px]">search</span>
+</div>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-white focus:outline-0 focus:ring-0 border-none bg-border-dark focus:border-none h-full placeholder:text-text-secondary px-4 rounded-l-none border-l-0 pl-2 text-sm font-normal leading-normal" placeholder="Search Kyotia..." value=""/>
+</div>
+</label>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary hover:bg-primary/90 transition-colors text-[#101622] text-sm font-bold leading-normal tracking-[0.015em]">
+<span class="truncate">Sign In</span>
+</button>
+</div>
+</header>
+<main class="flex-1 w-full max-w-[1440px] mx-auto p-4 sm:p-6 lg:p-10 relative">
+<div class="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none z-0">
+<div class="absolute top-20 left-[-10%] w-[500px] h-[500px] bg-primary/10 rounded-full blur-[120px]"></div>
+<div class="absolute bottom-20 right-[-5%] w-[400px] h-[400px] bg-purple-600/10 rounded-full blur-[100px]"></div>
+</div>
+<div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
+<div class="lg:col-span-4 xl:col-span-4 flex flex-col gap-6 lg:sticky lg:top-24">
+<div class="lg:hidden">
+<div class="flex flex-wrap gap-2 items-center text-sm">
+<a class="text-text-secondary hover:text-white transition-colors" href="../kyotia_wiki_dashboard/DashboardCode.html">Home</a>
+<span class="text-text-secondary">/</span>
+<a class="text-text-secondary hover:text-white transition-colors" href="#">Characters</a>
+<span class="text-text-secondary">/</span>
+<span class="text-white font-medium">Ace Kiani</span>
+</div>
+</div>
+<div class="relative group rounded-xl overflow-hidden border border-border-dark shadow-2xl bg-card-dark aspect-[3/4] lg:aspect-[3/5]">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Portrait of Ace Kiani holding a glowing purple crystal" style='background-image: url("../Character images/AceProfile0.1.png");'>
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-background-dark via-transparent to-transparent opacity-90"></div>
+<div class="absolute inset-0 bg-gradient-to-b from-primary/10 to-transparent mix-blend-overlay"></div>
+<div class="absolute bottom-0 left-0 w-full p-6 flex flex-col gap-2">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/20 backdrop-blur-sm border border-primary/30 w-fit">
+<span class="material-symbols-outlined text-primary text-[16px]">verified</span>
+<span class="text-xs font-bold text-white uppercase tracking-wider">Character</span>
+                                    </div>
+                                    <h1 class="text-white text-4xl font-bold tracking-tight shadow-sm">Ace Kiani</h1>
+                                    <p class="text-primary font-medium text-lg">Priskan-Human Hybrid</p>
+                                </div>
+</div>
+<div class="flex gap-3">
+<button class="flex-1 flex items-center justify-center gap-2 h-12 rounded-lg bg-card-dark border border-border-dark hover:bg-border-dark transition-colors text-white font-medium">
+<span class="material-symbols-outlined text-[20px]">share</span>
+                        Share
+                    </button>
+<button class="flex-1 flex items-center justify-center gap-2 h-12 rounded-lg bg-card-dark border border-border-dark hover:bg-border-dark transition-colors text-white font-medium">
+<span class="material-symbols-outlined text-[20px]">bookmark</span>
+                        Save
+                    </button>
+<button class="flex-none w-12 flex items-center justify-center h-12 rounded-lg bg-card-dark border border-border-dark hover:bg-border-dark transition-colors text-white font-medium">
+<span class="material-symbols-outlined text-[20px]">more_horiz</span>
+</button>
+</div>
+</div>
+<div class="lg:col-span-8 xl:col-span-8 flex flex-col gap-8">
+<div class="hidden lg:flex flex-wrap gap-2 items-center text-sm">
+<a class="text-text-secondary hover:text-white transition-colors" href="../kyotia_wiki_dashboard/DashboardCode.html">Home</a>
+<span class="text-text-secondary">/</span>
+<a class="text-text-secondary hover:text-white transition-colors" href="#">Characters</a>
+<span class="text-text-secondary">/</span>
+<span class="text-white font-medium">Ace Kiani</span>
+</div>
+<div class="flex flex-col gap-4 border-b border-border-dark pb-8">
+<div class="flex flex-col gap-2">
+<h2 class="text-white text-3xl md:text-5xl font-bold leading-tight tracking-tight">Ace Kiani</h2>
+                        <p class="text-text-secondary text-lg md:text-xl font-light">A reserved 9'3" Priskan with a troubled past, working as a bodyguard while protecting his sister at all costs.</p>
+</div>
+<div class="flex flex-wrap gap-3 mt-2">
+<span class="px-3 py-1 rounded-full bg-[#1e2736] text-sm text-text-secondary border border-border-dark">Version 4.2 Updated</span>
+<span class="px-3 py-1 rounded-full bg-[#1e2736] text-sm text-text-secondary border border-border-dark">Last Edited: 2 Days ago</span>
+</div>
+</div>
+<div class="bg-card-dark/50 border border-border-dark rounded-xl overflow-hidden backdrop-blur-sm">
+<div class="px-6 py-4 border-b border-border-dark bg-[#1e2736]/50 flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-[20px]">id_card</span>
+<h3 class="text-white font-bold text-lg">Personal Information</h3>
+</div>
+<div class="p-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-6 gap-x-8">
+                                <div class="flex flex-col gap-1">
+                                    <p class="text-text-secondary text-xs uppercase tracking-wider font-semibold">Age</p>
+                                    <p class="text-white text-base font-medium">30+ (Born April 6, 1996)</p>
+                                </div>
+                                <div class="flex flex-col gap-1">
+                                    <p class="text-text-secondary text-xs uppercase tracking-wider font-semibold">Status</p>
+                                    <div class="flex items-center gap-2">
+                                        <span class="relative flex h-2.5 w-2.5">
+                                          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                                          <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
+                                        </span>
+                                        <p class="text-white text-base font-medium">Active</p>
+                                    </div>
+                                </div>
+                                <div class="flex flex-col gap-1">
+                                    <p class="text-text-secondary text-xs uppercase tracking-wider font-semibold">Species</p>
+                                    <p class="text-white text-base font-medium">Priskan (Stickfigure-Human)</p>
+                                </div>
+                                <div class="flex flex-col gap-1">
+                                    <p class="text-text-secondary text-xs uppercase tracking-wider font-semibold">Origin</p>
+                                    <p class="text-white text-base font-medium">Tseki (Division)</p>
+                                </div>
+                                <div class="flex flex-col gap-1">
+                                    <p class="text-text-secondary text-xs uppercase tracking-wider font-semibold">Occupation</p>
+                                    <p class="text-white text-base font-medium">Bodyguard</p>
+                                </div>
+                                <div class="flex flex-col gap-1">
+                                    <p class="text-text-secondary text-xs uppercase tracking-wider font-semibold">Weapon</p>
+                                    <p class="text-white text-base font-medium">Prosthetic Blade Arm</p>
+                                </div>
+                            </div>
+</div>
+<div class="flex flex-col gap-6">
+<div class="flex items-center gap-3 border-b border-border-dark pb-4">
+<span class="material-symbols-outlined text-primary text-[24px]">stars</span>
+<h3 class="text-white text-2xl font-bold">Skills &amp; Abilities</h3>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+<div class="bg-card-dark p-4 rounded-lg border border-border-dark hover:border-primary/50 transition-colors group cursor-default">
+<div class="flex items-start gap-4">
+<div class="p-3 bg-[#1e2736] rounded-lg group-hover:bg-primary/20 transition-colors">
+<span class="material-symbols-outlined text-primary">water_drop</span>
+</div>
+<div>
+<h4 class="text-white font-bold text-sm mb-1">Water Manipulation</h4>
+<p class="text-text-secondary text-sm leading-relaxed">Can summon and control water to his will, at the cost of his stamina.</p>
+</div>
+</div>
+</div>
+<div class="bg-card-dark p-4 rounded-lg border border-border-dark hover:border-primary/50 transition-colors group cursor-default">
+<div class="flex items-start gap-4">
+<div class="p-3 bg-[#1e2736] rounded-lg group-hover:bg-primary/20 transition-colors">
+<span class="material-symbols-outlined text-primary">sports_martial_arts</span>
+</div>
+<div>
+<h4 class="text-white font-bold text-sm mb-1">Melee Combat</h4>
+<p class="text-text-secondary text-sm leading-relaxed">Highly proficient in close-range combat with brutal and effective tactics.</p>
+</div>
+</div>
+</div>
+<div class="bg-card-dark p-4 rounded-lg border border-border-dark hover:border-primary/50 transition-colors group cursor-default">
+<div class="flex items-start gap-4">
+<div class="p-3 bg-[#1e2736] rounded-lg group-hover:bg-primary/20 transition-colors">
+<span class="material-symbols-outlined text-primary">directions_run</span>
+</div>
+<div>
+<h4 class="text-white font-bold text-sm mb-1">Enhanced Speed</h4>
+<p class="text-text-secondary text-sm leading-relaxed">An extremely fast runner, though not to completely inhuman levels.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="bg-card-dark/50 border border-border-dark rounded-xl overflow-hidden backdrop-blur-sm">
+<div class="px-6 py-4 border-b border-border-dark bg-[#1e2736]/50 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-emerald-400 text-[22px]">shield</span>
+<h3 class="text-white font-bold text-lg">Strengths</h3>
+</div>
+<div class="h-2 w-2 rounded-full bg-emerald-400 shadow-[0_0_10px_rgba(52,211,153,0.5)]"></div>
+</div>
+<div class="p-6">
+<ul class="space-y-4">
+<li class="flex items-start gap-3 text-text-secondary">
+<span class="material-symbols-outlined text-emerald-400 text-[20px] mt-0.5 shrink-0">check_small</span>
+<span class="leading-relaxed">Desensitized to violence and murder, making him highly effective as a bodyguard.</span>
+</li>
+<li class="flex items-start gap-3 text-text-secondary">
+<span class="material-symbols-outlined text-emerald-400 text-[20px] mt-0.5 shrink-0">check_small</span>
+<span class="leading-relaxed">Takes a surprisingly long time to die from severe injuries despite being easily hurt.</span>
+</li>
+<li class="flex items-start gap-3 text-text-secondary">
+<span class="material-symbols-outlined text-emerald-400 text-[20px] mt-0.5 shrink-0">check_small</span>
+<span class="leading-relaxed">Has grown immunity to some bacterial diseases from eating raw meat.</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="bg-card-dark/50 border border-border-dark rounded-xl overflow-hidden backdrop-blur-sm">
+<div class="px-6 py-4 border-b border-border-dark bg-[#1e2736]/50 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-rose-400 text-[22px]">gpp_bad</span>
+<h3 class="text-white font-bold text-lg">Weaknesses</h3>
+</div>
+<div class="h-2 w-2 rounded-full bg-rose-400 shadow-[0_0_10px_rgba(251,113,133,0.5)]"></div>
+</div>
+<div class="p-6">
+<ul class="space-y-4">
+<li class="flex items-start gap-3 text-text-secondary">
+<span class="material-symbols-outlined text-rose-400 text-[20px] mt-0.5 shrink-0">close</span>
+<span class="leading-relaxed">Glass cannon in combat — easily hurt and knocked out despite his durability.</span>
+</li>
+<li class="flex items-start gap-3 text-text-secondary">
+<span class="material-symbols-outlined text-rose-400 text-[20px] mt-0.5 shrink-0">close</span>
+<span class="leading-relaxed">Nearsighted with a blind eye, resulting in terrible aim.</span>
+</li>
+<li class="flex items-start gap-3 text-text-secondary">
+<span class="material-symbols-outlined text-rose-400 text-[20px] mt-0.5 shrink-0">close</span>
+<span class="leading-relaxed">Severe fear of needles and spiders; will freak out at anything resembling them.</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-6">
+<div class="flex items-center gap-3 border-b border-border-dark pb-4">
+<span class="material-symbols-outlined text-primary text-[24px]">menu_book</span>
+<h3 class="text-white text-2xl font-bold">Biography</h3>
+</div>
+<div class="space-y-6 text-text-secondary text-lg leading-relaxed font-light">
+                            <p>
+                                Ace is a 9'3" tall Priskan with short, black hair and grey skin, featuring two notable white stripes going down his face. His eyes are white, and he has a stitched wound over his fake left eye. Numerous scars cover his body. He's known for wearing his purple headband with a grey crescent moon hair clip and his grey hoodie, usually paired with purple pants and shoes.
+                            </p>
+                            <div>
+                                <h4 class="text-white text-xl font-bold mb-3 mt-4">Early Life</h4>
+                                <p>
+                                    Ace and his sister, Ari, were discarded lab subjects of an experiment in late 1995 to early 1998. They were abandoned on the streets in the division of Tseki and picked up by a couple who brought them to the only orphanage available — a particularly cheap one with harsh conditions. When he saw how badly his younger sister got hurt, he swore to protect her under any circumstances, often fighting back with whatever gnarly tactic he could think of. As a result, Ace grew up with violent tendencies, exposed to violence and neglect. He was feared and often alone, though the loneliness never bothered him.
+                                </p>
+                            </div>
+                            <div>
+                                <h4 class="text-white text-xl font-bold mb-3 mt-4">School Years</h4>
+                                <p>
+                                    In school, he wouldn't talk to anyone and hated separating from Ari. He met his first friend, Parker, here — someone who put up with his violent sociopathic tendencies and always spoke his mind. During middle school, he became the talk of gossip as the "quiet kid." A hallway fight ended with him killing a classmate, leaving him with a missing eye and stitches in his head. At 15, he met Leslie, Gavin, Bailey, and Neitia (Ari's friend from the orphanage) when Ari visited him in the hospital.
+                                </p>
+                            </div>
+                            <div>
+                                <h4 class="text-white text-xl font-bold mb-3 mt-4">Adulthood</h4>
+                                <p>
+                                    Ace moved on to have a semi-stable life, working as a bodyguard. At 17, he took in a blue lekti named Xenoid, and later an orange stellrix already named Kashi. He also has a dark purple cat named Ceres. At 25, during a trip to the famous frozen Crystal Lake in southern Naneka, a massive riot occurred. They were caught in the chaos of fire and bullets — Leslie was shot and died.
+                                </p>
+                            </div>
+                            <div>
+                                <h4 class="text-white text-xl font-bold mb-3 mt-4">Present Day</h4>
+                                <p>
+                                    Now in his mid-30s, Ace has repaired friendships with Gavin and Parker, while Bailey "tolerates" him. Around 37, he lost his right arm on the job when a gang attacked — a needle or dart caused his arm to rot, requiring amputation. He replaced it with a long blade for work. Things are finally looking bright and hopeful.
+                                </p>
+                            </div>
+                            <div class="relative pl-6 border-l-4 border-primary/50 my-8 py-2 bg-primary/5 rounded-r-lg">
+                                <p class="italic text-white/90 font-normal">
+                                    Ace is usually reserved and introverted, but that doesn't stop him from showing his thoughts through his expressions. With people he's forced to work with, he's rude, insensitive, and pokes mean fun. Only with those incredibly close to him does he show more sympathy and openness.
+                                </p>
+                                <p class="text-sm mt-2 font-bold text-primary">— Personality</p>
+                            </div>
+                        </div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4">
+<div class="bg-card-dark rounded-xl p-6 border border-border-dark flex flex-col gap-4">
+<div class="flex items-center gap-3 mb-2">
+<div class="p-2 rounded-lg bg-primary/10">
+<span class="material-symbols-outlined text-primary text-[20px]">lightbulb</span>
+</div>
+<h3 class="text-white font-bold text-lg">Trivia</h3>
+</div>
+<ul class="space-y-3">
+<li class="flex items-start gap-3 text-text-secondary">
+<span class="material-symbols-outlined text-primary text-[18px] mt-0.5">check_circle</span>
+<span>Got his crescent moon hair clip at age 10 to match Ari's star hair clip.</span>
+</li>
+<li class="flex items-start gap-3 text-text-secondary">
+<span class="material-symbols-outlined text-primary text-[18px] mt-0.5">check_circle</span>
+<span>Based on the asexual pride flag colors. He is Aroace (Aromantic Asexual).</span>
+</li>
+<li class="flex items-start gap-3 text-text-secondary">
+<span class="material-symbols-outlined text-primary text-[18px] mt-0.5">check_circle</span>
+<span>Loves cats, watermelons, and the snow. Hates summer.</span>
+</li>
+<li class="flex items-start gap-3 text-text-secondary">
+<span class="material-symbols-outlined text-primary text-[18px] mt-0.5">check_circle</span>
+<span>Horrible at cooking — prefers raw steak and often eats raw meat.</span>
+</li>
+<li class="flex items-start gap-3 text-text-secondary">
+<span class="material-symbols-outlined text-primary text-[18px] mt-0.5">check_circle</span>
+<span>Struggles in academics (best class: PE). Once smashed a table trying to do times tables.</span>
+</li>
+<li class="flex items-start gap-3 text-text-secondary">
+<span class="material-symbols-outlined text-primary text-[18px] mt-0.5">check_circle</span>
+<span>Online username: Ace_res4 (mashup of his name, cat's name, and birth month).</span>
+</li>
+<li class="flex items-start gap-3 text-text-secondary">
+<span class="material-symbols-outlined text-primary text-[18px] mt-0.5">check_circle</span>
+<span>Left-handed. Good thing it was his right arm he lost!</span>
+</li>
+</ul>
+</div>
+<div class="bg-card-dark rounded-xl p-6 border border-border-dark flex flex-col gap-4">
+<div class="flex items-center gap-3 mb-2">
+<div class="p-2 rounded-lg bg-primary/10">
+<span class="material-symbols-outlined text-primary text-[20px]">map</span>
+</div>
+<h3 class="text-white font-bold text-lg">Relationships</h3>
+</div>
+<div class="flex-1 flex flex-col gap-3">
+<div class="flex items-center gap-3 p-3 bg-[#1e2736] rounded-lg">
+<div class="size-10 rounded-full bg-purple-500/20 flex items-center justify-center text-purple-400">
+<span class="material-symbols-outlined text-[20px]">person</span>
+</div>
+<div>
+<p class="text-white font-bold text-sm">Ari</p>
+<p class="text-text-secondary text-xs">Younger Sister</p>
+</div>
+</div>
+<div class="flex items-center gap-3 p-3 bg-[#1e2736] rounded-lg">
+<div class="size-10 rounded-full bg-blue-500/20 flex items-center justify-center text-blue-400">
+<span class="material-symbols-outlined text-[20px]">group</span>
+</div>
+<div>
+<p class="text-white font-bold text-sm">Parker, Gavin, Bailey</p>
+<p class="text-text-secondary text-xs">Close Friends</p>
+</div>
+</div>
+<div class="flex items-center gap-3 p-3 bg-[#1e2736] rounded-lg">
+<div class="size-10 rounded-full bg-amber-500/20 flex items-center justify-center text-amber-400">
+<span class="material-symbols-outlined text-[20px]">pets</span>
+</div>
+<div>
+<p class="text-white font-bold text-sm">Xenoid, Kashi, Ceres</p>
+<p class="text-text-secondary text-xs">Pets (Lekti, Stellrix, Cat)</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<footer class="mt-12 border-t border-border-dark bg-[#111722] py-10 px-6">
+<div class="max-w-[960px] mx-auto text-center flex flex-col items-center gap-6">
+<div class="size-8 text-text-secondary hover:text-primary transition-colors cursor-pointer">
+<span class="material-symbols-outlined !text-[32px]">auto_awesome</span>
+</div>
+<div class="flex gap-8 text-sm font-medium text-text-secondary">
+<a class="hover:text-white transition-colors" href="#">Privacy Policy</a>
+<a class="hover:text-white transition-colors" href="#">Terms of Service</a>
+<a class="hover:text-white transition-colors" href="#">Contact Support</a>
+</div>
+<p class="text-text-secondary text-sm">© 2023 Kyotia Wiki. All rights reserved. The Kyotia Universe is a fictional creation.</p>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Species Detail: The Astrals - Kyotia Wiki</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;700&amp;family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#00e5ff", // Electric Cyan
+                        "background-light": "#f0f9ff",
+                        "background-dark": "#020617", // Deep Navy
+                        "surface-dark": "#0f172a", // Navy Surface
+                        "border-blue": "#1e3a8a", // Sapphire/Navy Border
+                        "text-blue": "#7dd3fc" // Sky/Cerulean Text
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"],
+                        "body": ["Noto Sans", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #020617; 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #1e3a8a; 
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #3b82f6; 
+        }
+        summary::marker {
+            content: "";
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white font-display min-h-screen flex flex-col overflow-x-hidden">
+<header class="sticky top-0 z-50 w-full border-b border-solid border-border-blue bg-background-dark/95 backdrop-blur-sm px-6 py-3 lg:px-10">
+<div class="flex items-center justify-between mx-auto max-w-7xl">
+<div class="flex items-center gap-8">
+<a class="flex items-center gap-3 text-white hover:text-primary transition-colors" href="#">
+<div class="size-6 text-primary">
+<svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M42.4379 44C42.4379 44 36.0744 33.9038 41.1692 24C46.8624 12.9336 42.2078 4 42.2078 4L7.01134 4C7.01134 4 11.6577 12.932 5.96912 23.9969C0.876273 33.9029 7.27094 44 7.27094 44L42.4379 44Z" fill="currentColor"></path>
+</svg>
+</div>
+<h2 class="text-lg font-bold leading-tight tracking-wide uppercase">Kyotia Wiki</h2>
+</a>
+<nav class="hidden md:flex items-center gap-6">
+<a class="text-text-blue hover:text-primary text-sm font-medium leading-normal transition-colors" href="#">Lore</a>
+<a class="text-primary text-sm font-medium leading-normal transition-colors" href="#">Species</a>
+<a class="text-text-blue hover:text-primary text-sm font-medium leading-normal transition-colors" href="#">Planets</a>
+<a class="text-text-blue hover:text-primary text-sm font-medium leading-normal transition-colors" href="#">History</a>
+<a class="text-text-blue hover:text-primary text-sm font-medium leading-normal transition-colors" href="#">Magic System</a>
+</nav>
+</div>
+<div class="flex flex-1 justify-end gap-4 sm:gap-8">
+<label class="hidden sm:flex flex-col min-w-40 !h-10 max-w-64">
+<div class="flex w-full flex-1 items-stretch rounded-lg h-full border border-border-blue bg-surface-dark focus-within:border-primary transition-colors">
+<div class="text-text-blue flex bg-transparent items-center justify-center pl-3 pr-2">
+<span class="material-symbols-outlined text-[20px]">search</span>
+</div>
+<input class="flex w-full min-w-0 flex-1 bg-transparent text-white focus:outline-0 placeholder:text-text-blue/50 text-sm font-body" placeholder="Search database..."/>
+</div>
+</label>
+<div class="flex md:hidden text-white cursor-pointer">
+<span class="material-symbols-outlined">menu</span>
+</div>
+</div>
+</div>
+</header>
+<main class="flex-1 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 lg:py-10">
+<div class="flex flex-wrap gap-2 mb-6 text-sm">
+<a class="text-text-blue hover:text-primary font-medium transition-colors" href="../kyotia_wiki_dashboard/DashboardCode.html">Home</a>
+<span class="text-text-blue/40 font-medium">/</span>
+<a class="text-text-blue hover:text-primary font-medium transition-colors" href="#">Species</a>
+<span class="text-text-blue/40 font-medium">/</span>
+<span class="text-white font-medium">The Astrals</span>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
+<div class="lg:col-span-8 flex flex-col gap-8">
+<div class="relative w-full rounded-xl overflow-hidden aspect-video lg:aspect-[21/9] group border border-border-blue">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Ethereal humanoid figure made of starlight and nebula dust" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC79PMW8IWugf1pxNRYqOkW8gG-LROUPUDYaj5Tz3VrmDp4SKpQw2I9LVbNxw1ivB7p7a39ExAkAeJOznTGy4--9PuqBXzxs-Wkoc_wqN2-7xg_w3J7DnoScvk6kHWQirxSpo1_JcNyC_T2OhnkrTj68byOO8AcZ1MvsyjwBdw6VbQQi9ME5emi6c_ICuKSPw_jzVDhf2Zlk7G88mIqHotbOmtDDGGmUkH7sgQTlAgm6veBxvTDglgQtCw-GslN_I9sNYpE3zRdUyOs");'>
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-background-dark via-background-dark/50 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-6 sm:p-8">
+<h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-2 tracking-tight">The Astrals</h1>
+<p class="text-primary text-lg sm:text-xl font-medium tracking-wide uppercase opacity-90">Guardians of the Starlight Realm</p>
+</div>
+</div>
+<div class="prose prose-invert max-w-none">
+<p class="text-gray-300 text-lg leading-relaxed font-body border-l-4 border-primary pl-4">
+                        The Astrals are ancient, celestial humanoids who serve as the Guardians of the Starlight Realm. Born from nebulae and sustained by pure solar radiation, they act as mediators within the Kyotia alliance, bridging the ontological gap between the material plane and the ethereal currents of the cosmos. Their existence is a testament to the universe's ability to manifest consciousness from light itself.
+                    </p>
+</div>
+<div class="flex flex-col gap-4">
+<h3 class="text-2xl font-bold text-white mb-2 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">library_books</span>
+                        Comprehensive Data
+                    </h3>
+<details class="flex flex-col rounded-lg border border-border-blue bg-surface-dark group transition-all duration-300 open:border-primary/50" open="">
+<summary class="flex cursor-pointer items-center justify-between gap-4 p-4 hover:bg-white/5 transition-colors rounded-t-lg select-none">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-text-blue group-open:text-primary">landscape</span>
+<p class="text-white text-lg font-bold tracking-wide">Habitat</p>
+</div>
+<span class="material-symbols-outlined text-text-blue group-open:rotate-180 transition-transform duration-300">expand_more</span>
+</summary>
+<div class="px-4 pb-4 sm:px-6 sm:pb-6 text-gray-300 font-body leading-relaxed border-t border-white/5 pt-4 animate-in fade-in slide-in-from-top-2 duration-300">
+<p class="mb-4">
+                                The Astrals reside in floating crystalline cities, known as "Spires of Dawn," located within the upper stratosphere of Kyotia Prime. These massive, translucent structures are tethered to the planet's magnetic field via gravity-anchors and drift in synchronization with the polar auroras.
+                            </p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4">
+<div class="bg-background-dark rounded p-3 border border-white/5">
+<div class="text-xs text-text-blue uppercase tracking-wider mb-1">Atmosphere</div>
+<div class="text-white">Low-Density Nitrogen / High Solar UV</div>
+</div>
+<div class="bg-background-dark rounded p-3 border border-white/5">
+<div class="text-xs text-text-blue uppercase tracking-wider mb-1">Architecture</div>
+<div class="text-white">Bio-crystalline Spires</div>
+</div>
+</div>
+</div>
+</details>
+<details class="flex flex-col rounded-lg border border-border-blue bg-surface-dark group transition-all duration-300 open:border-primary/50">
+<summary class="flex cursor-pointer items-center justify-between gap-4 p-4 hover:bg-white/5 transition-colors rounded-t-lg select-none">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-text-blue group-open:text-primary">accessibility_new</span>
+<p class="text-white text-lg font-bold tracking-wide">Appearance &amp; Anatomy</p>
+</div>
+<span class="material-symbols-outlined text-text-blue group-open:rotate-180 transition-transform duration-300">expand_more</span>
+</summary>
+<div class="px-4 pb-4 sm:px-6 sm:pb-6 text-gray-300 font-body leading-relaxed border-t border-white/5 pt-4">
+<p class="mb-4">
+                                Astrals are characterized by their tall, slender frames and semi-translucent skin that shifts in hue depending on their emotional state and local star proximity. Instead of blood, a luminous fluid resembling liquid starlight circulates through their visible nervous system. They lack traditional facial features like mouths or noses, communicating entirely through telepathy, though they possess large, opalescent eyes.
+                            </p>
+<div class="w-full h-48 rounded-lg overflow-hidden relative mb-2" data-alt="Anatomy diagram of an Astral showing glowing nervous system">
+<div class="absolute inset-0 bg-cover bg-center opacity-80" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBl3Tr7EDk5GzjFRUGfGkIwsCABcK7wkjh_-OPsVVLR6YNxbr9AItQTTl3uAzQdLUUJntLA2j-TpPRLZGZKRafy3T8Zd5ofhHS0XN_PPOTVpME57F5hLrG9V7C8ftKWCKsUtB5SKNL5XotPXT4hG47QbMK4lN7o_iV21Lma0-5jD1f2P5Jck0a8HXQk_ck3BNVJjXX29xfUogoscUPkYBGZNzGlFTryx_rr6gyxFkBMHXu0FYaB7I0VbhFEOW-KKLl1EEpMOANnC7Un");'></div>
+<div class="absolute inset-0 bg-black/20 flex items-center justify-center">
+<span class="bg-black/60 px-3 py-1 rounded text-xs text-white backdrop-blur-sm">Fig 1.A: Circulatory Luminescence</span>
+</div>
+</div>
+</div>
+</details>
+<details class="flex flex-col rounded-lg border border-border-blue bg-surface-dark group transition-all duration-300 open:border-primary/50">
+<summary class="flex cursor-pointer items-center justify-between gap-4 p-4 hover:bg-white/5 transition-colors rounded-t-lg select-none">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-text-blue group-open:text-primary">hourglass_top</span>
+<p class="text-white text-lg font-bold tracking-wide">Life Cycle</p>
+</div>
+<span class="material-symbols-outlined text-text-blue group-open:rotate-180 transition-transform duration-300">expand_more</span>
+</summary>
+<div class="px-4 pb-4 sm:px-6 sm:pb-6 text-gray-300 font-body leading-relaxed border-t border-white/5 pt-4">
+<p>
+                                Astrals do not reproduce biologically in the traditional sense. A new Astral is "woven" from a convergence of high-energy cosmic rays in the Stellar Nursery. They emerge fully formed but with a blank consciousness, spending their first 500 cycles (The Dim Era) absorbing knowledge from the collective. Upon death, their physical form dissipates into photons, returning their energy to the nearest star.
+                            </p>
+</div>
+</details>
+<details class="flex flex-col rounded-lg border border-border-blue bg-surface-dark group transition-all duration-300 open:border-primary/50">
+<summary class="flex cursor-pointer items-center justify-between gap-4 p-4 hover:bg-white/5 transition-colors rounded-t-lg select-none">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-text-blue group-open:text-primary">theater_comedy</span>
+<p class="text-white text-lg font-bold tracking-wide">Culture &amp; Society</p>
+</div>
+<span class="material-symbols-outlined text-text-blue group-open:rotate-180 transition-transform duration-300">expand_more</span>
+</summary>
+<div class="px-4 pb-4 sm:px-6 sm:pb-6 text-gray-300 font-body leading-relaxed border-t border-white/5 pt-4">
+<p>
+                                Astral society is a meritocratic hierarchy based on "Luminosity"—a measure of one's wisdom and contribution to the preservation of cosmic balance. They are pacifists by nature but wield devastating light-based magic in defense of the realm. Art is created through light-weaving, sculpting hard-light holograms that can last for millennia.
+                            </p>
+</div>
+</details>
+</div>
+</div>
+<div class="lg:col-span-4 flex flex-col gap-6">
+<div class="sticky top-24 space-y-6">
+<div class="rounded-xl border border-primary/40 bg-surface-dark overflow-hidden shadow-lg shadow-black/50">
+<div class="bg-gradient-to-r from-primary/20 to-transparent p-4 border-b border-primary/20 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">dns</span>
+<h3 class="text-white font-bold tracking-wider uppercase text-sm">Species Data Log</h3>
+</div>
+<div class="p-6 flex flex-col items-center gap-6">
+<div class="size-32 rounded-full p-1 bg-gradient-to-b from-primary to-border-blue shadow-[0_0_25px_rgba(0,229,255,0.3)]">
+<div class="w-full h-full rounded-full bg-background-dark overflow-hidden relative">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="Abstract nebula swirl representing the species soul" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBTpFKWd2qB4LQNASXs2anp-ISAA0ciYZf6l9AZsVhD2mz6CG7eJLA5ag2BM-XT6vY0XuHyyVqZatRhHFP-biIcDl3MijFMFapFL17MzVCnSXpuWDpaCV9GB8wWl8qj8vnre7VTUAwcaydlkqHyyvPbpz5wqmcmDoZ7t0VnHaYWWFVfMuJI5-NWjQ2iZVjg_1V1To5dRNbDuRGUjMDfip2TV360MYInxD2Z4yL2zjIPSXPNwd7b8QO-PdvZU4nmbznXxZypZJF5Ny3D");'></div>
+</div>
+</div>
+<div class="w-full grid gap-y-4 text-sm">
+<div class="flex justify-between items-center border-b border-white/10 pb-2">
+<span class="text-text-blue">Classification</span>
+<span class="text-white font-medium text-right">Celestial Humanoid</span>
+</div>
+<div class="flex justify-between items-center border-b border-white/10 pb-2">
+<span class="text-text-blue">Lifespan</span>
+<span class="text-white font-medium text-right">4k - 5k Cycles</span>
+</div>
+<div class="flex justify-between items-center border-b border-white/10 pb-2">
+<span class="text-text-blue">Home World</span>
+<span class="text-white font-medium text-right hover:text-primary cursor-pointer transition-colors">Kyotia Prime</span>
+</div>
+<div class="flex justify-between items-center border-b border-white/10 pb-2">
+<span class="text-text-blue">Diet</span>
+<span class="text-white font-medium text-right">Solar Radiation</span>
+</div>
+<div class="flex justify-between items-center pb-2">
+<span class="text-text-blue">Alignment</span>
+<span class="text-primary font-medium text-right">Lawful Neutral</span>
+</div>
+</div>
+</div>
+<div class="p-4 bg-black/20">
+<button class="w-full py-3 rounded bg-primary/10 hover:bg-primary/20 border border-primary/30 text-primary font-bold text-sm tracking-widest uppercase transition-all flex items-center justify-center gap-2 group">
+<span class="material-symbols-outlined text-[18px]">view_in_ar</span>
+                                View 3D Model
+                            </button>
+</div>
+</div>
+<div class="rounded-xl border border-border-blue/50 bg-surface-dark p-5">
+<h4 class="text-white font-bold mb-4 text-sm uppercase tracking-wider text-text-blue">Related Species</h4>
+<div class="flex flex-col gap-3">
+<a class="flex items-center gap-3 group" href="#">
+<div class="size-10 rounded bg-black/40 border border-white/10 overflow-hidden shrink-0">
+<div class="w-full h-full bg-cover bg-center" data-alt="Dark matter entity" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBV2jG3fBLjRduXfmfBw18RuPyWokLDt_KXY0jFGRlFFzTgoXKdYdwW-YWu1sx1GcIlgyJDQvGOfbdlzu27oYlLiXl4kg1XjQMihhGsjvIoDyVLaFHZe_ey-MM0fhz-X3Y9eCouDgGm2JtNVTFJiTORixVQma4PHDKrelxw6nDQi4tb_3atgvXAwiCzR6tYiZ8Y36qAdafBA8B2vsvZk9jDX00aLFPp9Q3g1zHtxAYBUOsHqjU7ybqqdDl1PWALgEutlycXittOR-lI");'></div>
+</div>
+<div class="flex flex-col">
+<span class="text-white text-sm font-medium group-hover:text-primary transition-colors">The Voidwalkers</span>
+<span class="text-xs text-text-blue/60">Antithesis</span>
+</div>
+</a>
+<a class="flex items-center gap-3 group" href="#">
+<div class="size-10 rounded bg-black/40 border border-white/10 overflow-hidden shrink-0">
+<div class="w-full h-full bg-cover bg-center" data-alt="Crystalline golem texture" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDSC21eeaOnXDeFmkpPzLNb20qrXSWvFk8rEGDEpMINn_AhVmPld1yl0tT1pNgfDJ4PGAuz4E0KrQ39XEv1fqRJEw6w4_w1jILfN33z_YH7aWK_CJt7lhx__9AcKmYfEegXY9eviXCwCvz6Cat4P0GvRsabmEL-U_DewdlEHCFcG32pUKWCwk_XcuxmEpSyZn09NsC0QjP1CSPFZ4s70SweKrNEeJIqtAmCAZk9TL8dD1P1HT0O43puyI8FIASswu6dHUFIKv20JQRV");'></div>
+</div>
+<div class="flex flex-col">
+<span class="text-white text-sm font-medium group-hover:text-primary transition-colors">Crystal Golems</span>
+<span class="text-xs text-text-blue/60">Subservient</span>
+</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<footer class="mt-20 border-t border-border-blue bg-background-dark py-10 px-6">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+<div class="text-text-blue/60 text-sm">
+                © 2024 Kyotia Universe. All rights reserved.
+            </div>
+<div class="flex gap-6">
+<a class="text-text-blue hover:text-primary transition-colors" href="#">Terms</a>
+<a class="text-text-blue hover:text-primary transition-colors" href="#">Privacy</a>
+<a class="text-text-blue hover:text-primary transition-colors" href="#">Contribute</a>
+</div>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Character Profile: Ari Kiani</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#4CAF50","background-light": "#f6f6f8",
+                        "background-dark": "#101622",
+                        "card-dark": "#161e2d",
+                        "border-dark": "#232f48",
+                        "text-secondary": "#92a4c9",
+                    },
+                    fontFamily: {
+                        "display": ["Work Sans", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #101622; 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #232f48; 
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #324467; 
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white font-display overflow-x-hidden min-h-screen flex flex-col selection:bg-primary selection:text-black">
+<header class="sticky top-0 z-50 flex items-center justify-between whitespace-nowrap border-b border-solid border-b-border-dark bg-[#111722]/90 backdrop-blur-md px-4 sm:px-10 py-3">
+<div class="flex items-center gap-4 sm:gap-8">
+<div class="flex items-center gap-4 text-white">
+<div class="size-6 text-primary">
+<span class="material-symbols-outlined !text-[24px]">auto_awesome</span>
+</div>
+<h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">Kyotia Wiki</h2>
+</div>
+<div class="hidden md:flex items-center gap-6">
+<a class="text-white text-sm font-medium leading-normal hover:text-primary transition-colors" href="../kyotia_wiki_dashboard/DashboardCode.html">Home</a>
+<a class="text-primary text-sm font-medium leading-normal" href="#">Characters</a>
+<a class="text-white text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Locations</a>
+<a class="text-white text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Artifacts</a>
+<a class="text-white text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Lore</a>
+</div>
+</div>
+<div class="flex flex-1 justify-end gap-4 sm:gap-8">
+<label class="hidden sm:flex flex-col min-w-40 !h-10 max-w-64">
+<div class="flex w-full flex-1 items-stretch rounded-lg h-full">
+<div class="text-text-secondary flex border-none bg-border-dark items-center justify-center pl-4 rounded-l-lg border-r-0">
+<span class="material-symbols-outlined text-[20px]">search</span>
+</div>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-white focus:outline-0 focus:ring-0 border-none bg-border-dark focus:border-none h-full placeholder:text-text-secondary px-4 rounded-l-none border-l-0 pl-2 text-sm font-normal leading-normal" placeholder="Search Kyotia..." value=""/>
+</div>
+</label>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary hover:bg-primary/90 transition-colors text-[#101622] text-sm font-bold leading-normal tracking-[0.015em]">
+<span class="truncate">Sign In</span>
+</button>
+</div>
+</header>
+<main class="flex-1 w-full max-w-[1440px] mx-auto p-4 sm:p-6 lg:p-10 relative">
+<div class="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none z-0">
+<div class="absolute top-20 left-[-10%] w-[500px] h-[500px] bg-primary/10 rounded-full blur-[120px]"></div>
+<div class="absolute bottom-20 right-[-5%] w-[400px] h-[400px] bg-purple-600/10 rounded-full blur-[100px]"></div>
+</div>
+<div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
+<div class="lg:col-span-4 xl:col-span-4 flex flex-col gap-6 lg:sticky lg:top-24">
+<div class="lg:hidden">
+<div class="flex flex-wrap gap-2 items-center text-sm">
+<a class="text-text-secondary hover:text-white transition-colors" href="../kyotia_wiki_dashboard/DashboardCode.html">Home</a>
+<span class="text-text-secondary">/</span>
+<a class="text-text-secondary hover:text-white transition-colors" href="#">Characters</a>
+<span class="text-text-secondary">/</span>
+<span class="text-white font-medium">Ari Kiani</span>
+</div>
+</div>
+<div class="relative group rounded-xl overflow-hidden border border-border-dark shadow-2xl bg-card-dark aspect-[3/4] lg:aspect-[3/5]">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Portrait of Ari Kiani, a tall Priskan with green skin and hair" style='background-image: url("../Character images/AriProfile0.1.png");'>
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-background-dark via-transparent to-transparent opacity-90"></div>
+<div class="absolute inset-0 bg-gradient-to-b from-primary/10 to-transparent mix-blend-overlay"></div>
+<div class="absolute bottom-0 left-0 w-full p-6 flex flex-col gap-2">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/20 backdrop-blur-sm border border-primary/30 w-fit">
+<span class="material-symbols-outlined text-primary text-[16px]">verified</span>
+<span class="text-xs font-bold text-white uppercase tracking-wider">Character</span>
+                                    </div>
+                                    <h1 class="text-white text-4xl font-bold tracking-tight shadow-sm">Ari Kiani</h1>
+                                    <p class="text-primary font-medium text-lg">Priskan</p>
+                                </div>
+</div>
+<div class="flex gap-3">
+<button class="flex-1 flex items-center justify-center gap-2 h-12 rounded-lg bg-card-dark border border-border-dark hover:bg-border-dark transition-colors text-white font-medium">
+<span class="material-symbols-outlined text-[20px]">share</span>
+                        Share
+                    </button>
+<button class="flex-1 flex items-center justify-center gap-2 h-12 rounded-lg bg-card-dark border border-border-dark hover:bg-border-dark transition-colors text-white font-medium">
+<span class="material-symbols-outlined text-[20px]">bookmark</span>
+                        Save
+                    </button>
+<button class="flex-none w-12 flex items-center justify-center h-12 rounded-lg bg-card-dark border border-border-dark hover:bg-border-dark transition-colors text-white font-medium">
+<span class="material-symbols-outlined text-[20px]">more_horiz</span>
+</button>
+</div>
+</div>
+<div class="lg:col-span-8 xl:col-span-8 flex flex-col gap-8">
+<div class="hidden lg:flex flex-wrap gap-2 items-center text-sm">
+<a class="text-text-secondary hover:text-white transition-colors" href="../kyotia_wiki_dashboard/DashboardCode.html">Home</a>
+<span class="text-text-secondary">/</span>
+<a class="text-text-secondary hover:text-white transition-colors" href="#">Characters</a>
+<span class="text-text-secondary">/</span>
+<span class="text-white font-medium">Ari Kiani</span>
+</div>
+<div class="flex flex-col gap-4 border-b border-border-dark pb-8">
+<div class="flex flex-col gap-2">
+<h2 class="text-white text-3xl md:text-5xl font-bold leading-tight tracking-tight">Ari Kiani</h2>
+                        <p class="text-text-secondary text-lg md:text-xl font-light">A kind-hearted 9' Priskan who works as a freelance accountant and baker, always striving to be generous despite her nervous nature.</p>
+</div>
+<div class="flex flex-wrap gap-3 mt-2">
+<span class="px-3 py-1 rounded-full bg-[#1e2736] text-sm text-text-secondary border border-border-dark">Version 4.2 Updated</span>
+<span class="px-3 py-1 rounded-full bg-[#1e2736] text-sm text-text-secondary border border-border-dark">Last Edited: 2 Days ago</span>
+</div>
+</div>
+<div class="bg-card-dark/50 border border-border-dark rounded-xl overflow-hidden backdrop-blur-sm">
+<div class="px-6 py-4 border-b border-border-dark bg-[#1e2736]/50 flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-[20px]">id_card</span>
+<h3 class="text-white font-bold text-lg">Personal Information</h3>
+</div>
+<div class="p-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-6 gap-x-8">
+                                <div class="flex flex-col gap-1">
+                                    <p class="text-text-secondary text-xs uppercase tracking-wider font-semibold">Age</p>
+                                    <p class="text-white text-base font-medium">26+ (Born February 20, 1998)</p>
+                                </div>
+                                <div class="flex flex-col gap-1">
+                                    <p class="text-text-secondary text-xs uppercase tracking-wider font-semibold">Status</p>
+                                    <div class="flex items-center gap-2">
+                                        <span class="relative flex h-2.5 w-2.5">
+                                          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                                          <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
+                                        </span>
+                                        <p class="text-white text-base font-medium">Active</p>
+                                    </div>
+                                </div>
+                                <div class="flex flex-col gap-1">
+                                    <p class="text-text-secondary text-xs uppercase tracking-wider font-semibold">Species</p>
+                                    <p class="text-white text-base font-medium">Priskan-Human</p>
+                                </div>
+                                <div class="flex flex-col gap-1">
+                                    <p class="text-text-secondary text-xs uppercase tracking-wider font-semibold">Origin</p>
+                                    <p class="text-white text-base font-medium">Tseki (Division)</p>
+                                </div>
+                                <div class="flex flex-col gap-1">
+                                    <p class="text-text-secondary text-xs uppercase tracking-wider font-semibold">Occupation</p>
+                                    <p class="text-white text-base font-medium">Accountant / Baker</p>
+                                </div>
+                                <div class="flex flex-col gap-1">
+                                    <p class="text-text-secondary text-xs uppercase tracking-wider font-semibold">Weapon</p>
+                                    <p class="text-white text-base font-medium">Bow & Firearms</p>
+                                </div>
+                            </div>
+</div>
+<div class="flex flex-col gap-6">
+<div class="flex items-center gap-3 border-b border-border-dark pb-4">
+<span class="material-symbols-outlined text-primary text-[24px]">stars</span>
+<h3 class="text-white text-2xl font-bold">Skills &amp; Abilities</h3>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+<div class="bg-card-dark p-4 rounded-lg border border-border-dark hover:border-primary/50 transition-colors group cursor-default">
+<div class="flex items-start gap-4">
+<div class="p-3 bg-[#1e2736] rounded-lg group-hover:bg-primary/20 transition-colors">
+<span class="material-symbols-outlined text-primary">air</span>
+</div>
+<div>
+<h4 class="text-white font-bold text-sm mb-1">Wind Manipulation</h4>
+<p class="text-text-secondary text-sm leading-relaxed">Can manipulate air to her will, at the cost of her energy.</p>
+</div>
+</div>
+</div>
+<div class="bg-card-dark p-4 rounded-lg border border-border-dark hover:border-primary/50 transition-colors group cursor-default">
+<div class="flex items-start gap-4">
+<div class="p-3 bg-[#1e2736] rounded-lg group-hover:bg-primary/20 transition-colors">
+<span class="material-symbols-outlined text-primary">healing</span>
+</div>
+<div>
+<h4 class="text-white font-bold text-sm mb-1">Healing</h4>
+<p class="text-text-secondary text-sm leading-relaxed">Can speed up regeneration and lessen severity of major injuries, at the cost of her and the recipient's energy.</p>
+</div>
+</div>
+</div>
+<div class="bg-card-dark p-4 rounded-lg border border-border-dark hover:border-primary/50 transition-colors group cursor-default">
+<div class="flex items-start gap-4">
+<div class="p-3 bg-[#1e2736] rounded-lg group-hover:bg-primary/20 transition-colors">
+<span class="material-symbols-outlined text-primary">gps_fixed</span>
+</div>
+<div>
+<h4 class="text-white font-bold text-sm mb-1">Archery & Ranged Combat</h4>
+<p class="text-text-secondary text-sm leading-relaxed">Great with the bow and arrow! Her go-to self defence is usually some sort of firearm.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="bg-card-dark/50 border border-border-dark rounded-xl overflow-hidden backdrop-blur-sm">
+<div class="px-6 py-4 border-b border-border-dark bg-[#1e2736]/50 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-emerald-400 text-[22px]">shield</span>
+<h3 class="text-white font-bold text-lg">Strengths</h3>
+</div>
+<div class="h-2 w-2 rounded-full bg-emerald-400 shadow-[0_0_10px_rgba(52,211,153,0.5)]"></div>
+</div>
+<div class="p-6">
+<ul class="space-y-4">
+<li class="flex items-start gap-3 text-text-secondary">
+<span class="material-symbols-outlined text-emerald-400 text-[20px] mt-0.5 shrink-0">check_small</span>
+<span class="leading-relaxed">Kind and generous nature that helps her make and maintain friendships easily.</span>
+</li>
+<li class="flex items-start gap-3 text-text-secondary">
+<span class="material-symbols-outlined text-emerald-400 text-[20px] mt-0.5 shrink-0">check_small</span>
+<span class="leading-relaxed">Excellent at ranged combat with bow and firearms.</span>
+</li>
+<li class="flex items-start gap-3 text-text-secondary">
+<span class="material-symbols-outlined text-emerald-400 text-[20px] mt-0.5 shrink-0">check_small</span>
+<span class="leading-relaxed">Healing abilities that can help others recover from injuries faster.</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="bg-card-dark/50 border border-border-dark rounded-xl overflow-hidden backdrop-blur-sm">
+<div class="px-6 py-4 border-b border-border-dark bg-[#1e2736]/50 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-rose-400 text-[22px]">gpp_bad</span>
+<h3 class="text-white font-bold text-lg">Weaknesses</h3>
+</div>
+<div class="h-2 w-2 rounded-full bg-rose-400 shadow-[0_0_10px_rgba(251,113,133,0.5)]"></div>
+</div>
+<div class="p-6">
+<ul class="space-y-4">
+<li class="flex items-start gap-3 text-text-secondary">
+<span class="material-symbols-outlined text-rose-400 text-[20px] mt-0.5 shrink-0">close</span>
+<span class="leading-relaxed">Nervous and introverted — does not deal with presentations well at all.</span>
+</li>
+<li class="flex items-start gap-3 text-text-secondary">
+<span class="material-symbols-outlined text-rose-400 text-[20px] mt-0.5 shrink-0">close</span>
+<span class="leading-relaxed">Her generosity can make her a pushover and lead to self-destructive behavior.</span>
+</li>
+<li class="flex items-start gap-3 text-text-secondary">
+<span class="material-symbols-outlined text-rose-400 text-[20px] mt-0.5 shrink-0">close</span>
+<span class="leading-relaxed">Afraid of insects and subconsciously believes horror clichés are real.</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-6">
+<div class="flex items-center gap-3 border-b border-border-dark pb-4">
+<span class="material-symbols-outlined text-primary text-[24px]">menu_book</span>
+<h3 class="text-white text-2xl font-bold">Biography</h3>
+</div>
+<div class="space-y-6 text-text-secondary text-lg leading-relaxed font-light">
+                            <p>
+                                Ari is a 9' tall Priskan-Human with light green skin and lighter green stripes down her face. She has a burn scar under her hair from childhood. Ari has long green hair tied up in a ponytail with a yellow star hair clip. She wears a white bandana and a light and dark grey hoodie with dark green pants and shoes.
+                            </p>
+                            <div>
+                                <h4 class="text-white text-xl font-bold mb-3 mt-4">Early Life</h4>
+                                <p>
+                                    Ari and her brother Ace were discarded lab subjects of an experiment from late 1995 to early 1998. They were abandoned on the streets and picked up by a couple who brought them to a cheap orphanage with horrible care. As toddlers, they were exposed to violence and neglect. She got a nasty injury from being thrown into a wall, leaving her with a scar she hides under her hair. After that, Ace protected her fiercely, though it meant she often had to watch violent fights. During this time, she met her friend Neitia, who was 2 years younger. But Neitia eventually left, and Ari never knew when they would meet again.
+                                </p>
+                            </div>
+                            <div>
+                                <h4 class="text-white text-xl font-bold mb-3 mt-4">School Years</h4>
+                                <p>
+                                    When she started school, she met another friend named Parker and tried to introduce him to Ace. Although separated from everyone at times, the time away made her too nervous to talk. In middle school, she often skipped presentations out of pure anxiety, leading to detention. During one detention, she met Leslie (Neitia's non-blood sister), who introduced her to Gavin and Bailey. They quickly became close friends. She was afraid to introduce them to her brother due to his nature, but when an incident happened and she had to visit Ace in the hospital, they insisted on going with her.
+                                </p>
+                            </div>
+                            <div>
+                                <h4 class="text-white text-xl font-bold mb-3 mt-4">Adulthood</h4>
+                                <p>
+                                    Ari now has a stable life as both a freelance accountant and working multirole in a small bakery. At 22, she found two lektis on the street and named them Sydney and Frostbite. She was okay as a parent, but perhaps too soft on them — though they seemed well mannered enough, or just really asocial.
+                                </p>
+                            </div>
+                            <div class="relative pl-6 border-l-4 border-primary/50 my-8 py-2 bg-primary/5 rounded-r-lg">
+                                <p class="italic text-white/90 font-normal">
+                                    Ari tends to be nervous and introverted, but she doesn't like having enemies. Even though she tries to be as kind and generous as possible, she doesn't like talking or being open to anyone who aren't her friends — though she hates being alone as well. Sometimes, her generosity can be a bit of a pushover and be self-destructive.
+                                </p>
+                                <p class="text-sm mt-2 font-bold text-primary">— Personality</p>
+                            </div>
+                        </div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4">
+<div class="bg-card-dark rounded-xl p-6 border border-border-dark flex flex-col gap-4">
+<div class="flex items-center gap-3 mb-2">
+<div class="p-2 rounded-lg bg-primary/10">
+<span class="material-symbols-outlined text-primary text-[20px]">lightbulb</span>
+</div>
+<h3 class="text-white font-bold text-lg">Trivia</h3>
+</div>
+<ul class="space-y-3">
+<li class="flex items-start gap-3 text-text-secondary">
+<span class="material-symbols-outlined text-primary text-[18px] mt-0.5">check_circle</span>
+<span>Her star hair clip was a gift from Ace! Where he got it from, he'd never tell her.</span>
+</li>
+<li class="flex items-start gap-3 text-text-secondary">
+<span class="material-symbols-outlined text-primary text-[18px] mt-0.5">check_circle</span>
+<span>She's the only other person who knows the truth about Ace's middle school incident.</span>
+</li>
+<li class="flex items-start gap-3 text-text-secondary">
+<span class="material-symbols-outlined text-primary text-[18px] mt-0.5">check_circle</span>
+<span>Based on the romantic pride flag colors. She is Aroace (Aromantic Asexual).</span>
+</li>
+<li class="flex items-start gap-3 text-text-secondary">
+<span class="material-symbols-outlined text-primary text-[18px] mt-0.5">check_circle</span>
+<span>Can't stand heavily spiced foods, but otherwise isn't that picky.</span>
+</li>
+<li class="flex items-start gap-3 text-text-secondary">
+<span class="material-symbols-outlined text-primary text-[18px] mt-0.5">check_circle</span>
+<span>Adores little parrots, bunnies, and cats — but is afraid she wouldn't do well raising one.</span>
+</li>
+<li class="flex items-start gap-3 text-text-secondary">
+<span class="material-symbols-outlined text-primary text-[18px] mt-0.5">check_circle</span>
+<span>Often dreading the possibility of more family and friends dying or leaving, especially Ace.</span>
+</li>
+</ul>
+</div>
+<div class="bg-card-dark rounded-xl p-6 border border-border-dark flex flex-col gap-4">
+<div class="flex items-center gap-3 mb-2">
+<div class="p-2 rounded-lg bg-primary/10">
+<span class="material-symbols-outlined text-primary text-[20px]">map</span>
+</div>
+<h3 class="text-white font-bold text-lg">Relationships</h3>
+</div>
+<div class="flex-1 flex flex-col gap-3">
+<div class="flex items-center gap-3 p-3 bg-[#1e2736] rounded-lg">
+<div class="size-10 rounded-full bg-purple-500/20 flex items-center justify-center text-purple-400">
+<span class="material-symbols-outlined text-[20px]">person</span>
+</div>
+<div>
+<p class="text-white font-bold text-sm">Ace</p>
+<p class="text-text-secondary text-xs">Older Brother</p>
+</div>
+</div>
+<div class="flex items-center gap-3 p-3 bg-[#1e2736] rounded-lg">
+<div class="size-10 rounded-full bg-blue-500/20 flex items-center justify-center text-blue-400">
+<span class="material-symbols-outlined text-[20px]">group</span>
+</div>
+<div>
+<p class="text-white font-bold text-sm">Parker, Leslie, Gavin, Bailey, Neitia</p>
+<p class="text-text-secondary text-xs">Close Friends</p>
+</div>
+</div>
+<div class="flex items-center gap-3 p-3 bg-[#1e2736] rounded-lg">
+<div class="size-10 rounded-full bg-amber-500/20 flex items-center justify-center text-amber-400">
+<span class="material-symbols-outlined text-[20px]">pets</span>
+</div>
+<div>
+<p class="text-white font-bold text-sm">Sydney, Frostbite</p>
+<p class="text-text-secondary text-xs">Pets (Lektis)</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<footer class="mt-12 border-t border-border-dark bg-[#111722] py-10 px-6">
+<div class="max-w-[960px] mx-auto text-center flex flex-col items-center gap-6">
+<div class="size-8 text-text-secondary hover:text-primary transition-colors cursor-pointer">
+<span class="material-symbols-outlined !text-[32px]">auto_awesome</span>
+</div>
+<div class="flex gap-8 text-sm font-medium text-text-secondary">
+<a class="hover:text-white transition-colors" href="#">Privacy Policy</a>
+<a class="hover:text-white transition-colors" href="#">Terms of Service</a>
+<a class="hover:text-white transition-colors" href="#">Contact Support</a>
+</div>
+<p class="text-text-secondary text-sm">© 2023 Kyotia Wiki. All rights reserved. The Kyotia Universe is a fictional creation.</p>
+</div>
+</footer>
+</body></html>
