@@ -46,7 +46,7 @@
 <div class="layout-content-container flex flex-col w-full flex-1">
 <div class="@container w-full">
 <div class="relative w-full">
-<div class="flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 items-center justify-center p-8 relative" data-alt="Mystic nebula and celestial sky background" style='background-image: linear-gradient(180deg, rgba(16, 22, 34, 0.3) 0%, rgba(16, 22, 34, 0.9) 100%), url("../Banner_Images/MeteorShowerBanner.png");'>
+<div class="flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 items-center justify-center p-8 relative" data-alt="Mystic nebula and celestial sky background" style='background-image: linear-gradient(180deg, rgba(16, 22, 34, 0.3) 0%, rgba(16, 22, 34, 0.9) 100%), url("Banner_Images/MeteorShowerBanner.png");'>
 <div class="flex flex-col gap-2 text-center z-10 max-w-3xl">
 <div class="flex justify-center mb-4">
 <span class="material-symbols-outlined text-6xl text-primary/80 animate-pulse">language</span>
@@ -117,7 +117,7 @@
 </div>
 <div id="content-grid" class="grid grid-cols-2 md:grid-cols-4 gap-4">
     <!-- Worlds Content Initial Load -->
-    <a class="group flex flex-col items-center justify-center p-6 rounded-xl bg-slate-50 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 hover:border-primary hover:shadow-[0_0_20px_rgba(17,82,212,0.15)] transition-all cursor-pointer" href="../Worlds_Lexina/LexinaCode.html">
+    <a class="group flex flex-col items-center justify-center p-6 rounded-xl bg-slate-50 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 hover:border-primary hover:shadow-[0_0_20px_rgba(17,82,212,0.15)] transition-all cursor-pointer" href="Worlds/Lexina.html">
         <div class="mb-3 size-14 rounded-full bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors duration-300">
             <span class="material-symbols-outlined text-3xl">public</span>
         </div>
@@ -265,19 +265,19 @@
 <script>
     const contentData = {
         worlds: [
-            { title: "Lexina", subtitle: "Mortal Lords", icon: "public", href: "../Worlds_Lexina/LexinaCode.html" },
+            { title: "Lexina", subtitle: "Mortal Lords", icon: "public", href: "Worlds/Lexina.html" },
             { title: "Malissai", subtitle: "Laws of Nature", icon: "forest", href: "#" },
             { title: "Protostar", subtitle: "Industrial Core", icon: "factory", href: "#" },
             { title: "Arleiva", subtitle: "Tree of Light", icon: "contrast", href: "#" }
         ],
         characters: [
-            { title: "Ace Kiani", subtitle: "Moonlit Blade", icon: "person", href: "../character_profile_Ace/AceProfileCode.html" },
-            { title: "Ari Kiani", subtitle: "Shooting Stars", icon: "visibility_off", href: "../character_profile_Ari/AriProfileCode.html" },
-            { title: "Oculi Lumaris", subtitle: "Moon of Spirit", icon: "auto_fix_high", href: "../character_profile_Oculi/OculiProfileCode.html" },
-            { title: "Amber", subtitle: "Arzira's Creation", icon: "smart_toy", href: "../character_profile_Amber/AmberProfileCode.html" }
+            { title: "Ace Kiani", subtitle: "Moonlit Blade", icon: "person", href: "Characters/AceProfile.html" },
+            { title: "Ari Kiani", subtitle: "Shooting Stars", icon: "visibility_off", href: "Characters/AriProfile.html" },
+            { title: "Oculi Lumaris", subtitle: "Moon of Spirit", icon: "auto_fix_high", href: "Characters/OculiProfile.html" },
+            { title: "Amber", subtitle: "Arzira's Creation", icon: "smart_toy", href: "Characters/AmberProfile.html" }
         ],
         realms: [
-            { title: "Yinavi", subtitle: "The Imaginary", icon: "castle", href: "../Realms_Yinavi/YinaviCode.html" },
+            { title: "Yinavi", subtitle: "The Imaginary", icon: "castle", href: "Realms/Yinavi.html" },
             { title: "Reality's Collapse", subtitle: "Mindscape Hell", icon: "landscape", href: "#" },
             { title: "Teroe Isles", subtitle: "Islands of Memory", icon: "dark_mode", href: "#" },
             { title: "Kyovi Sea", subtitle: "Sea of Energy", icon: "star", href: "#" }
@@ -286,22 +286,22 @@
             { title: "Humans", subtitle: "Mass Colonizers", icon: "face", href: "#" },
             { title: "Priskans", subtitle: "Priskatic Mutants", icon: "forest", href: "#" },
             { title: "Arachnians", subtitle: "Blood Hunters", icon: "hammer", href: "#" },
-            { title: "Lekti", subtitle: "Entropic Spirits", icon: "local_fire_department", href: "../Species_Lekti/LektiCode.html" }
+            { title: "Lekti", subtitle: "Entropic Spirits", icon: "local_fire_department", href: "Species/Lekti.html" }
         ],
         kyovi: [
             { title: "Magical Energy", subtitle: "The Purest Form", icon: "water_drop", href: "#" },
-            { title: "Catalyst Energy", subtitle: "Altered States", icon: "skull", href: "../Kyovi_Magic_Catalyst/KyoviCode.html" },
+            { title: "Catalyst Energy", subtitle: "Altered States", icon: "skull", href: "Kyovi/Kyovi_catalyst.html" },
             { title: "Spirits", subtitle: "Conscious Life", icon: "visibility", href: "#" },
             { title: "The Sea", subtitle: "Kyovi Reserve", icon: "psychology", href: "#" }
         ],
         gods: [
-            { title: "Arzira", subtitle: "Embodiment of Chaos", icon: "wb_sunny", href: "../god_profile_Arzira/ArziraProfileCode.html" },
+            { title: "Arzira", subtitle: "Embodiment of Chaos", icon: "wb_sunny", href: "Gods/ArziraProfile.html" },
             { title: "Amano", subtitle: "Embodiment of Order", icon: "dark_mode", href: "#" },
             { title: "Zyvire", subtitle: "Crimson Angel", icon: "public", href: "#" },
             { title: "Cryln", subtitle: "Faded Memory", icon: "local_fire_department", href: "#" }
         ],
         alt_universes: [
-            { title: "Multiverse Havoc", subtitle: "Anomalous Activity", icon: "flip", href: "../Alt_Universe_MultiverseHavoc/MHCode.html" },
+            { title: "Multiverse Havoc", subtitle: "Anomalous Activity", icon: "flip", href: "Alt_Universe/MultiverseHavoc.html" },
             { title: "Stellar", subtitle: "Interstellar Travelers", icon: "memory", href: "#" },
             { title: "Anarchy", subtitle: "Justice and Souls", icon: "pets", href: "#" },
             { title: "Masquerade", subtitle: "False Creations", icon: "bedtime", href: "#" }
