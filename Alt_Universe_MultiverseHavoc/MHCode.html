@@ -2,7 +2,7 @@
 <html class="dark" lang="en"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Alternate Universe: The Shattered Rift - Kyotia Wiki</title>
+<title>Alternate Universe: Multiverse Havoc - Kyotia Wiki</title>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;700&amp;family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
@@ -14,12 +14,12 @@
             theme: {
                 extend: {
                     colors: {
-                        "primary": "#00e5ff", // Electric Cyan
+                        "primary": "#a855f7", // Purple for chaos/anomaly theme
                         "background-light": "#f0f9ff",
                         "background-dark": "#020617", // Deep Navy
                         "surface-dark": "#0f172a", // Navy Surface
                         "border-blue": "#1e3a8a", // Sapphire/Navy Border
-                        "text-blue": "#7dd3fc" // Sky/Cerulean Text
+                        "text-blue": "#c4b5fd" // Light purple text
                     },
                     fontFamily: {
                         "display": ["Space Grotesk", "sans-serif"],
@@ -42,7 +42,14 @@
             border-radius: 4px;
         }
         ::-webkit-scrollbar-thumb:hover {
-            background: #3b82f6; 
+            background: #a855f7; 
+        }
+        @keyframes pulse-glow {
+            0%, 100% { box-shadow: 0 0 20px rgba(168, 85, 247, 0.3); }
+            50% { box-shadow: 0 0 40px rgba(168, 85, 247, 0.6); }
+        }
+        .anomaly-glow {
+            animation: pulse-glow 3s ease-in-out infinite;
         }
     </style>
 </head>
@@ -50,7 +57,7 @@
 <header class="sticky top-0 z-50 w-full border-b border-solid border-border-blue bg-background-dark/95 backdrop-blur-sm px-6 py-3 lg:px-10">
 <div class="flex items-center justify-between mx-auto max-w-7xl">
 <div class="flex items-center gap-8">
-<a class="flex items-center gap-3 text-white hover:text-primary transition-colors" href="#">
+<a class="flex items-center gap-3 text-white hover:text-primary transition-colors" href="../kyotia_wiki_dashboard/DashboardCode.html">
 <div class="size-6 text-primary">
 <svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
 <path d="M42.4379 44C42.4379 44 36.0744 33.9038 41.1692 24C46.8624 12.9336 42.2078 4 42.2078 4L7.01134 4C7.01134 4 11.6577 12.932 5.96912 23.9969C0.876273 33.9029 7.27094 44 7.27094 44L42.4379 44Z" fill="currentColor"></path>
@@ -62,8 +69,6 @@
 <a class="text-text-blue hover:text-primary text-sm font-medium leading-normal transition-colors" href="#">Lore</a>
 <a class="text-text-blue hover:text-primary text-sm font-medium leading-normal transition-colors" href="#">Species</a>
 <a class="text-primary text-sm font-medium leading-normal transition-colors" href="#">Universes</a>
-<a class="text-text-blue hover:text-primary text-sm font-medium leading-normal transition-colors" href="#">History</a>
-<a class="text-text-blue hover:text-primary text-sm font-medium leading-normal transition-colors" href="#">Magic System</a>
 </nav>
 </div>
 <div class="flex flex-1 justify-end gap-4 sm:gap-8">
@@ -85,134 +90,165 @@
 <div class="flex flex-wrap gap-2 mb-6 text-sm">
 <a class="text-text-blue hover:text-primary font-medium transition-colors" href="../kyotia_wiki_dashboard/DashboardCode.html">Home</a>
 <span class="text-text-blue/40 font-medium">/</span>
-<a class="text-text-blue hover:text-primary font-medium transition-colors" href="#">Multiverse</a>
+<a class="text-text-blue hover:text-primary font-medium transition-colors" href="#">Alt Universes</a>
 <span class="text-text-blue/40 font-medium">/</span>
-<span class="text-white font-medium">The Shattered Rift</span>
+<span class="text-white font-medium">Multiverse Havoc</span>
 </div>
 <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
-<div class="lg:col-span-9 flex flex-col gap-8">
-<div class="relative w-full rounded-xl overflow-hidden aspect-video lg:aspect-[2.5/1] group border border-border-blue shadow-lg shadow-primary/5">
-<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Fractured reality skyscape" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC79PMW8IWugf1pxNRYqOkW8gG-LROUPUDYaj5Tz3VrmDp4SKpQw2I9LVbNxw1ivB7p7a39ExAkAeJOznTGy4--9PuqBXzxs-Wkoc_wqN2-7xg_w3J7DnoScvk6kHWQirxSpo1_JcNyC_T2OhnkrTj68byOO8AcZ1MvsyjwBdw6VbQQi9ME5emi6c_ICuKSPw_jzVDhf2Zlk7G88mIqHotbOmtDDGGmUkH7sgQTlAgm6veBxvTDglgQtCw-GslN_I9sNYpE3zRdUyOs");'>
+<div class="lg:col-span-8 flex flex-col gap-8">
+<div class="relative w-full rounded-xl overflow-hidden aspect-video lg:aspect-[2.5/1] group border border-primary/50 anomaly-glow">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Chaotic portal rifts in space" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC79PMW8IWugf1pxNRYqOkW8gG-LROUPUDYaj5Tz3VrmDp4SKpQw2I9LVbNxw1ivB7p7a39ExAkAeJOznTGy4--9PuqBXzxs-Wkoc_wqN2-7xg_w3J7DnoScvk6kHWQirxSpo1_JcNyC_T2OhnkrTj68byOO8AcZ1MvsyjwBdw6VbQQi9ME5emi6c_ICuKSPw_jzVDhf2Zlk7G88mIqHotbOmtDDGGmUkH7sgQTlAgm6veBxvTDglgQtCw-GslN_I9sNYpE3zRdUyOs");'>
 </div>
 <div class="absolute inset-0 bg-gradient-to-t from-background-dark via-background-dark/60 to-transparent"></div>
 <div class="absolute bottom-0 left-0 p-6 sm:p-10">
 <div class="inline-block px-3 py-1 mb-3 rounded-full bg-primary/20 border border-primary/40 backdrop-blur-md">
-<span class="text-primary text-xs font-bold tracking-widest uppercase">Designation: AU-882</span>
+<span class="text-primary text-xs font-bold tracking-widest uppercase">Anomalous Activity</span>
 </div>
-<h1 class="text-4xl sm:text-5xl lg:text-7xl font-bold text-white mb-2 tracking-tighter drop-shadow-lg">The Shattered Rift</h1>
-<p class="text-text-blue text-lg sm:text-2xl font-light tracking-wide opacity-90">Where the laws of physics are mere suggestions.</p>
+<h1 class="text-4xl sm:text-5xl lg:text-7xl font-bold text-white mb-2 tracking-tighter drop-shadow-lg">Multiverse Havoc</h1>
+<p class="text-text-blue text-lg sm:text-2xl font-light tracking-wide opacity-90">Where reality tears at the seams.</p>
 </div>
 </div>
 <div class="prose prose-invert prose-lg max-w-none font-body text-gray-300">
 <p class="lead text-xl md:text-2xl text-white font-display font-medium border-l-4 border-primary pl-6 mb-8">
-                        The Shattered Rift represents a divergence point in the timeline roughly 3,000 cycles prior to the Unification Era. In this reality, the containment field surrounding the Primordial Singularity collapsed, fragmenting the material plane into millions of floating islands suspended in a void of raw arcane energy.
+                        An alternate universe similar to Kyotia, but plagued by a universal phenomenon called "Anomalies"—portals, rifts, and non-euclidean paths that spawn and disappear at random, all manifested through the chaotic magic of <span class="text-primary font-bold">Arzira</span>.
                     </p>
 <h3 class="text-2xl font-bold text-white mb-4 mt-8 flex items-center gap-3">
-<span class="material-symbols-outlined text-primary">history_edu</span>
-                        Historical Divergence
+<span class="material-symbols-outlined text-primary">blur_on</span>
+                        The Anomalies
                     </h3>
 <p class="mb-6">
-                        Unlike Prime Kyotia, where the Astrals stabilized the planet's core, the Rift's version of the Astral Council attempted to harness the singularity's power directly. The resulting feedback loop—known as <em>The Great Splintering</em>—shattered the planet's crust. Gravity is no longer a constant force but varies depending on proximity to the jagged "Ley-Shards" that drift through the atmosphere.
+                        These mysterious openings appear without warning and vanish just as unpredictably. They can manifest anywhere—in the middle of a crowded city, deep within ancient forests, or floating in the void of space. The magic of Arzira, the Embodiment of Chaos, is responsible for their existence, though whether they are intentional creations or chaotic byproducts remains unknown.
                     </p>
-<div class="my-8 rounded-xl overflow-hidden border border-border-blue/50 relative group">
+<div class="my-8 rounded-xl overflow-hidden border border-primary/30 relative group">
 <div class="absolute inset-0 bg-primary/5 group-hover:bg-primary/10 transition-colors"></div>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-0">
-<div class="p-6 md:p-8 flex flex-col justify-center">
-<h4 class="text-primary font-bold uppercase tracking-widest text-sm mb-2">Key Environment Data</h4>
-<ul class="space-y-3 text-sm">
-<li class="flex justify-between border-b border-white/10 pb-2">
-<span class="text-text-blue">Gravity</span>
-<span class="text-white">Fluctuating (0.2g - 4.5g)</span>
-</li>
-<li class="flex justify-between border-b border-white/10 pb-2">
-<span class="text-text-blue">Atmosphere</span>
-<span class="text-white">Breathable (High Arcane Saturation)</span>
-</li>
-<li class="flex justify-between border-b border-white/10 pb-2">
-<span class="text-text-blue">Dominant Faction</span>
-<span class="text-white">The Void Privateers</span>
-</li>
-<li class="flex justify-between border-b border-white/10 pb-2">
-<span class="text-text-blue">Threat Level</span>
-<span class="text-red-400 font-bold">Catastrophic</span>
-</li>
-</ul>
+<div class="p-6 md:p-8">
+<h4 class="text-primary font-bold uppercase tracking-widest text-sm mb-4">Anomaly Characteristics</h4>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div class="bg-background-dark/80 rounded-lg p-4 border border-white/5">
+<div class="flex items-center gap-2 mb-2">
+<span class="material-symbols-outlined text-primary text-lg">all_inclusive</span>
+<span class="text-white font-bold">Portals</span>
 </div>
-<div class="h-64 md:h-auto bg-cover bg-center min-h-[250px]" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBl3Tr7EDk5GzjFRUGfGkIwsCABcK7wkjh_-OPsVVLR6YNxbr9AItQTTl3uAzQdLUUJntLA2j-TpPRLZGZKRafy3T8Zd5ofhHS0XN_PPOTVpME57F5hLrG9V7C8ftKWCKsUtB5SKNL5XotPXT4hG47QbMK4lN7o_iV21Lma0-5jD1f2P5Jck0a8HXQk_ck3BNVJjXX29xfUogoscUPkYBGZNzGlFTryx_rr6gyxFkBMHXu0FYaB7I0VbhFEOW-KKLl1EEpMOANnC7Un");'>
-<div class="w-full h-full bg-black/40 backdrop-blur-[1px] flex items-center justify-center">
-<span class="bg-black/70 text-white text-xs px-2 py-1 rounded border border-white/20">Fig 1: Ley-Line Turbulence Map</span>
+<p class="text-sm text-gray-400">Direct doorways to other locations, sometimes stable enough to pass through safely.</p>
+</div>
+<div class="bg-background-dark/80 rounded-lg p-4 border border-white/5">
+<div class="flex items-center gap-2 mb-2">
+<span class="material-symbols-outlined text-primary text-lg">broken_image</span>
+<span class="text-white font-bold">Rifts</span>
+</div>
+<p class="text-sm text-gray-400">Tears in reality that leak energy and matter between dimensions unpredictably.</p>
+</div>
+<div class="bg-background-dark/80 rounded-lg p-4 border border-white/5">
+<div class="flex items-center gap-2 mb-2">
+<span class="material-symbols-outlined text-primary text-lg">route</span>
+<span class="text-white font-bold">Non-Euclidean Paths</span>
+</div>
+<p class="text-sm text-gray-400">Spatial distortions where distance and direction no longer follow normal rules.</p>
+</div>
+<div class="bg-background-dark/80 rounded-lg p-4 border border-white/5">
+<div class="flex items-center gap-2 mb-2">
+<span class="material-symbols-outlined text-primary text-lg">help</span>
+<span class="text-white font-bold">Unknown Types</span>
+</div>
+<p class="text-sm text-gray-400">Other anomaly variations exist but remain poorly documented due to their danger.</p>
 </div>
 </div>
 </div>
 </div>
 <h3 class="text-2xl font-bold text-white mb-4 flex items-center gap-3">
-<span class="material-symbols-outlined text-primary">cyclone</span>
-                        The Void-Sea
+<span class="material-symbols-outlined text-primary">public</span>
+                        Destinations Unknown
+                    </h3>
+<p class="mb-6">
+                        These openings often take people to other planets, other realms, or even other galaxies entirely. The destination is never predictable—one moment you could step through and find yourself on a lush alien world, the next you might emerge in the cold vacuum of deep space or a realm of pure magic.
+                    </p>
+<div class="bg-red-500/10 border border-red-500/30 rounded-xl p-6 my-8">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-red-400 text-3xl">warning</span>
+<div>
+<h4 class="text-red-400 font-bold text-lg mb-2">⚠️ Extreme Danger Warning</h4>
+<p class="text-gray-300">
+                                Whether travelers return or not is <span class="text-red-400 font-bold">indefinite</span>. People are often warned against entering anomalies, as stepping through one is treated almost like a <span class="text-red-400 font-bold">suicide gamble</span>. Many who enter are never seen again. Those who do return often speak of years passing in what felt like moments—or moments stretching into lifetimes.
+                            </p>
+</div>
+</div>
+</div>
+<h3 class="text-2xl font-bold text-white mb-4 flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">auto_awesome</span>
+                        Arzira's Influence
                     </h3>
 <p>
-                        Between the floating remnants of civilization lies the Void-Sea, a nebular ocean of purple and midnight blue gas. It is home to mutated fauna that have adapted to vacuum exposure. The sentient species of this world travel between islands on "Skimmers"—ships rigged with solar sails that catch the currents of starlight. Survival here demands constant movement, as staying in one location too long risks being caught in a reality tremor.
+                        The anomalies are a direct manifestation of Arzira's chaotic magic permeating through this universe. As the Embodiment of Chaos, Arzira's power creates these rifts in reality—whether as intentional acts, unconscious overflow of power, or simply the natural consequence of chaos existing in a structured universe. Some scholars believe the anomalies serve a purpose known only to Arzira. Others think they are simply the universe struggling to contain infinite chaos.
                     </p>
 </div>
 </div>
-<div class="lg:col-span-3 flex flex-col gap-6">
-<div class="sticky top-24">
-<div class="flex items-center justify-between mb-4 pb-2 border-b border-border-blue">
-<h3 class="text-lg font-bold text-white tracking-wide uppercase">Cast</h3>
-<span class="text-xs text-text-blue font-mono bg-surface-dark px-2 py-1 rounded border border-border-blue">4 Active</span>
+<div class="lg:col-span-4 flex flex-col gap-6">
+<div class="sticky top-24 space-y-6">
+<div class="rounded-xl border border-primary/40 bg-surface-dark overflow-hidden shadow-lg shadow-primary/10">
+<div class="bg-gradient-to-r from-primary/20 to-transparent p-4 border-b border-primary/20 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">info</span>
+<h3 class="text-white font-bold tracking-wider uppercase text-sm">Universe Data</h3>
 </div>
-<div class="flex flex-col gap-3">
-<a class="group flex items-center gap-4 p-3 rounded-lg bg-surface-dark border border-border-blue/50 hover:border-primary hover:bg-surface-dark/80 hover:shadow-[0_0_20px_rgba(0,229,255,0.15)] transition-all duration-300" href="#">
-<div class="size-12 rounded bg-background-dark border border-white/10 overflow-hidden shrink-0 shadow-inner group-hover:scale-105 transition-transform">
-<div class="w-full h-full bg-cover bg-center" data-alt="Character Portrait" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBTpFKWd2qB4LQNASXs2anp-ISAA0ciYZf6l9AZsVhD2mz6CG7eJLA5ag2BM-XT6vY0XuHyyVqZatRhHFP-biIcDl3MijFMFapFL17MzVCnSXpuWDpaCV9GB8wWl8qj8vnre7VTUAwcaydlkqHyyvPbpz5wqmcmDoZ7t0VnHaYWWFVfMuJI5-NWjQ2iZVjg_1V1To5dRNbDuRGUjMDfip2TV360MYInxD2Z4yL2zjIPSXPNwd7b8QO-PdvZU4nmbznXxZypZJF5Ny3D");'></div>
+<div class="p-6">
+<div class="w-full grid gap-y-4 text-sm">
+<div class="flex justify-between items-center border-b border-white/10 pb-2">
+<span class="text-text-blue">Designation</span>
+<span class="text-white font-medium text-right">AU-MH</span>
+</div>
+<div class="flex justify-between items-center border-b border-white/10 pb-2">
+<span class="text-text-blue">Base Universe</span>
+<span class="text-white font-medium text-right">Kyotia (Similar)</span>
+</div>
+<div class="flex justify-between items-center border-b border-white/10 pb-2">
+<span class="text-text-blue">Key Phenomenon</span>
+<span class="text-primary font-medium text-right">Anomalies</span>
+</div>
+<div class="flex justify-between items-center border-b border-white/10 pb-2">
+<span class="text-text-blue">Cause</span>
+<span class="text-white font-medium text-right">Arzira's Magic</span>
+</div>
+<div class="flex justify-between items-center border-b border-white/10 pb-2">
+<span class="text-text-blue">Anomaly Behavior</span>
+<span class="text-white font-medium text-right">Random Spawn/Vanish</span>
+</div>
+<div class="flex justify-between items-center border-b border-white/10 pb-2">
+<span class="text-text-blue">Destinations</span>
+<span class="text-white font-medium text-right">Planets, Realms, Galaxies</span>
+</div>
+<div class="flex justify-between items-center pb-2">
+<span class="text-text-blue">Return Rate</span>
+<span class="text-red-400 font-bold text-right">Indefinite</span>
+</div>
+</div>
+</div>
+<div class="p-4 bg-black/20 border-t border-white/5">
+<div class="text-xs text-text-blue mb-2">Threat Assessment</div>
+<div class="flex items-center gap-2">
+<div class="flex-1 h-2 bg-background-dark rounded-full overflow-hidden">
+<div class="h-full w-[90%] bg-gradient-to-r from-amber-500 via-red-500 to-red-600 rounded-full"></div>
+</div>
+<span class="text-red-400 text-xs font-bold">EXTREME</span>
+</div>
+</div>
+</div>
+<div class="rounded-xl border border-border-blue/50 bg-surface-dark p-5">
+<h4 class="font-bold mb-4 text-sm uppercase tracking-wider text-text-blue">Key Entity</h4>
+<a class="group flex items-center gap-4 p-3 rounded-lg bg-background-dark border border-primary/30 hover:border-primary hover:shadow-[0_0_20px_rgba(168,85,247,0.2)] transition-all duration-300" href="../god_profile_Arzira/ArziraProfileCode.html">
+<div class="size-12 rounded-full bg-primary/20 border border-primary/40 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary text-2xl">auto_awesome</span>
 </div>
 <div class="flex flex-col min-w-0">
-<span class="text-white text-sm font-bold truncate group-hover:text-primary transition-colors">Commander Varek</span>
-<span class="text-xs text-text-blue/70 truncate">The Void-Walker</span>
+<span class="text-white text-sm font-bold truncate group-hover:text-primary transition-colors">Arzira</span>
+<span class="text-xs text-text-blue/70 truncate">Embodiment of Chaos</span>
 </div>
-<div class="ml-auto opacity-0 group-hover:opacity-100 transition-opacity -translate-x-2 group-hover:translate-x-0">
+<div class="ml-auto">
 <span class="material-symbols-outlined text-primary text-sm">arrow_forward_ios</span>
 </div>
 </a>
-<a class="group flex items-center gap-4 p-3 rounded-lg bg-surface-dark border border-border-blue/50 hover:border-primary hover:bg-surface-dark/80 hover:shadow-[0_0_20px_rgba(0,229,255,0.15)] transition-all duration-300" href="#">
-<div class="size-12 rounded bg-background-dark border border-white/10 overflow-hidden shrink-0 shadow-inner group-hover:scale-105 transition-transform">
-<div class="w-full h-full bg-cover bg-center" data-alt="Character Portrait" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBV2jG3fBLjRduXfmfBw18RuPyWokLDt_KXY0jFGRlFFzTgoXKdYdwW-YWu1sx1GcIlgyJDQvGOfbdlzu27oYlLiXl4kg1XjQMihhGsjvIoDyVLaFHZe_ey-MM0fhz-X3Y9eCouDgGm2JtNVTFJiTORixVQma4PHDKrelxw6nDQi4tb_3atgvXAwiCzR6tYiZ8Y36qAdafBA8B2vsvZk9jDX00aLFPp9Q3g1zHtxAYBUOsHqjU7ybqqdDl1PWALgEutlycXittOR-lI");'></div>
 </div>
-<div class="flex flex-col min-w-0">
-<span class="text-white text-sm font-bold truncate group-hover:text-primary transition-colors">Lady Lyra</span>
-<span class="text-xs text-text-blue/70 truncate">High Arcanist</span>
-</div>
-<div class="ml-auto opacity-0 group-hover:opacity-100 transition-opacity -translate-x-2 group-hover:translate-x-0">
-<span class="material-symbols-outlined text-primary text-sm">arrow_forward_ios</span>
-</div>
-</a>
-<a class="group flex items-center gap-4 p-3 rounded-lg bg-surface-dark border border-border-blue/50 hover:border-primary hover:bg-surface-dark/80 hover:shadow-[0_0_20px_rgba(0,229,255,0.15)] transition-all duration-300" href="#">
-<div class="size-12 rounded bg-background-dark border border-white/10 overflow-hidden shrink-0 shadow-inner group-hover:scale-105 transition-transform">
-<div class="w-full h-full bg-cover bg-center" data-alt="Character Portrait" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDSC21eeaOnXDeFmkpPzLNb20qrXSWvFk8rEGDEpMINn_AhVmPld1yl0tT1pNgfDJ4PGAuz4E0KrQ39XEv1fqRJEw6w4_w1jILfN33z_YH7aWK_CJt7lhx__9AcKmYfEegXY9eviXCwCvz6Cat4P0GvRsabmEL-U_DewdlEHCFcG32pUKWCwk_XcuxmEpSyZn09NsC0QjP1CSPFZ4s70SweKrNEeJIqtAmCAZk9TL8dD1P1HT0O43puyI8FIASswu6dHUFIKv20JQRV");'></div>
-</div>
-<div class="flex flex-col min-w-0">
-<span class="text-white text-sm font-bold truncate group-hover:text-primary transition-colors">Unit 77-B</span>
-<span class="text-xs text-text-blue/70 truncate">Rogue Golem</span>
-</div>
-<div class="ml-auto opacity-0 group-hover:opacity-100 transition-opacity -translate-x-2 group-hover:translate-x-0">
-<span class="material-symbols-outlined text-primary text-sm">arrow_forward_ios</span>
-</div>
-</a>
-<a class="group flex items-center gap-4 p-3 rounded-lg bg-surface-dark border border-border-blue/50 hover:border-primary hover:bg-surface-dark/80 hover:shadow-[0_0_20px_rgba(0,229,255,0.15)] transition-all duration-300" href="#">
-<div class="size-12 rounded bg-background-dark border border-white/10 overflow-hidden shrink-0 shadow-inner group-hover:scale-105 transition-transform flex items-center justify-center">
-<span class="material-symbols-outlined text-text-blue text-2xl">question_mark</span>
-</div>
-<div class="flex flex-col min-w-0">
-<span class="text-white text-sm font-bold truncate group-hover:text-primary transition-colors">Unknown Entity</span>
-<span class="text-xs text-text-blue/70 truncate">Anomaly</span>
-</div>
-<div class="ml-auto opacity-0 group-hover:opacity-100 transition-opacity -translate-x-2 group-hover:translate-x-0">
-<span class="material-symbols-outlined text-primary text-sm">arrow_forward_ios</span>
-</div>
-</a>
-</div>
-<div class="mt-6 p-4 rounded-lg bg-gradient-to-br from-border-blue/20 to-transparent border border-border-blue/30">
+<div class="p-4 rounded-lg bg-gradient-to-br from-primary/10 to-transparent border border-primary/20">
 <p class="text-xs text-text-blue leading-relaxed">
-<span class="font-bold text-primary">Wiki Note:</span> Characters in this AU may possess vastly different alignments and abilities than their Prime counterparts. Proceed with caution.
+<span class="font-bold text-primary">Wiki Note:</span> Information on this alternate universe is limited. More data will be added as research continues—if researchers survive their expeditions.
                     </p>
 </div>
 </div>
@@ -231,5 +267,4 @@
 </div>
 </div>
 </footer>
-
 </body></html>
